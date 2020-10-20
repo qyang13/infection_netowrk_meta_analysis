@@ -1,0 +1,15 @@
+Community structure detection of host transcriptional response to viral infections
+
+Yang & Lulla
+
+This is excellent. What a nice proposal! I like that I can understand what you propose to do in a clear and concise way. Thank you!
+
+To answer your questions: 
+
+Gene expression networks are kinda weird because they are constructed from correlations e.g. through RNAseq experiments. We gain some insight through knockout/knockdown/recovery experiments, but the network, even in those cases, is really a simplification of complicated dynamics. In that scenario, what does an edge from i to j really mean?  So... it's a challenge! If you know Michael Bradshaw, who works with Ryan Layer, you might get in touch with him. (If not, I can introduce you.)  He has been reviewing this literature for a while. 
+
+I don't think that there's any clear answer to what kind of pairwise association score is best! The sad, complete answer, is "it depends."
+
+What kind of algorithm to use? Hmmm. It depends on what kind of data you have. Weighted or unweighted? Directed or undirected? Strictly positive or signed? I am most impressed with SBM family methods, and Peixoto / Graph-Tool has a weighted SBM too. Not sure what the state of the art is for signed networks. 
+
+The goal should be to use networks—analysis and/or modeling—in service of the scientific questions. So be sure to include various analyses that include networks. But if you were to do a project that included networks as a means to do analyses, that would also be great.
